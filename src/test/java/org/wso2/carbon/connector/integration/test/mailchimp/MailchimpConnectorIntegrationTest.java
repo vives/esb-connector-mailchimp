@@ -18,10 +18,6 @@
 
 package org.wso2.carbon.connector.integration.test.mailchimp;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -30,6 +26,13 @@ import org.testng.annotations.Test;
 import org.wso2.connector.integration.test.base.ConnectorIntegrationTestBase;
 import org.wso2.connector.integration.test.base.RestResponse;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Integration test class for Mailchimp connector
+ */
 public class MailchimpConnectorIntegrationTest extends ConnectorIntegrationTestBase {
 
 	private Map<String, String> esbRequestHeadersMap = new HashMap<String, String>();

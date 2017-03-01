@@ -15,7 +15,4 @@
             <package name="org.wso2.carbon.connector.integration.test.mailchimp"/>
         </packages>
     </test>
-
 </suite>
-
-

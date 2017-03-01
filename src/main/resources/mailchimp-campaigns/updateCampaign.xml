@@ -119,7 +119,7 @@
         <property name="title" expression="$func:title"/>
         <property name="campaignTitle" expression="$func:campaignTitle"/>
         <script language="js">
-        <![CDATA[
+            <![CDATA[
             var listId = mc.getProperty('listId');
             var segmentOpts = mc.getProperty('segmentOpts');
             var type = mc.getProperty('type');
@@ -230,7 +230,8 @@
                 if (testSize != null && testSize != "") {
                     query = query.concat(',"test_size":' + testSize);
                 }
-                if (subjectLinesForVariateSettings != null && subjectLinesForVariateSettings != "" && subjectLinesForVariateSettings != "[]") {
+                if (subjectLinesForVariateSettings != null && subjectLinesForVariateSettings != "" &&
+                    subjectLinesForVariateSettings != "[]") {
                     var subjectLinesForVariateSettings = eval( "('" + subjectLinesForVariateSettings + "')" );
                     query = query.concat(',"subject_lines":' + subjectLinesForVariateSettings);
                 }
@@ -344,14 +345,16 @@
             <then>
                 <call blocking="true">
                     <endpoint>
-                        <http method="PATCH" uri-template="{uri.var.apiUrl}/{uri.var.apiVersion}/campaigns/{uri.var.campaignId}"/>
+                        <http method="PATCH"
+                              uri-template="{uri.var.apiUrl}/{uri.var.apiVersion}/campaigns/{uri.var.campaignId}"/>
                     </endpoint>
                 </call>
             </then>
             <else>
                 <call>
                     <endpoint>
-                        <http method="PATCH" uri-template="{uri.var.apiUrl}/{uri.var.apiVersion}/campaigns/{uri.var.campaignId}"/>
+                        <http method="PATCH"
+                              uri-template="{uri.var.apiUrl}/{uri.var.apiVersion}/campaigns/{uri.var.campaignId}"/>
                     </endpoint>
                 </call>
             </else>

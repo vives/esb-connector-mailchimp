@@ -231,7 +231,8 @@
                 if (testSize != null && testSize != "") {
                     query = query.concat(',"test_size":' + testSize);
                 }
-                if (subjectLinesForVariateSettings != null && subjectLinesForVariateSettings != "" && subjectLinesForVariateSettings != "[]") {
+                if (subjectLinesForVariateSettings != null && subjectLinesForVariateSettings != "" &&
+                    subjectLinesForVariateSettings != "[]") {
                     var subjectLinesForVariateSettings = eval( "('" + subjectLinesForVariateSettings + "')" );
                     query = query.concat(',"subject_lines":' + subjectLinesForVariateSettings);
                 }
